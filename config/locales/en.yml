@@ -56,7 +56,7 @@ en:
       content: "Get help on the Ruby on Rails Tutorial at the
         %{link_page}. To get help on this sample app, see the
         %{link_book}."
-      text_help_page: "Rails Tutorial Help page"
+      text_page: "Rails Tutorial Help page"
       text_book: "<em>Ruby on Rails Tutorial</em> book"
     home:
       header: "Sample App"
