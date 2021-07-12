@@ -3,10 +3,13 @@ git_source(:github){|repo| "https://github.com/#{repo}.git"}
 
 ruby "2.7.1"
 
+gem "config"
+gem "i18n-js"
 gem "jbuilder", "~> 2.7"
 gem "mysql2", "~> 0.5.3"
 gem "puma", "~> 4.1"
 gem "rails", "~> 6.0.4"
+gem "rails-i18n"
 gem "sass-rails", ">= 6"
 gem "turbolinks", "~> 5"
 gem "webpacker", "~> 4.0"
@@ -29,8 +32,13 @@ end
 
 group :test do
   gem "capybara", ">= 2.15"
+  gem "guard", "2.15.0"
   gem "selenium-webdriver"
   gem "webdrivers"
+end
+
+group :production do
+  gem "pg", "1.1.4"
 end
 
 gem "tzinfo-data", platforms: [:mingw, :mswin, :x64_mingw, :jruby]
