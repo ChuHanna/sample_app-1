@@ -1,5 +1,6 @@
 author: "https://www.michaelhartl.com/"
 enabled_locales: ["en", "vi"]
+image_size: 200
 learn_enough_web: "https://www.learnenough.com/"
 maximum_email_length: 255
 maximum_name_length: 50

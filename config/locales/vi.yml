@@ -13,6 +13,10 @@ vi:
       content: "%{link_page} bởi %{link_author}"
       text_page: "Hướng dẫn Ruby on Rails"
       text_author: "Michael Hartl"
+  shared:
+    error_messages:
+      contains: "Biểu mẫu này chứa"
+      error: "lỗi"
   static_pages:
     about:
       header: "Về nội dung"
@@ -52,3 +56,9 @@ vi:
       header: "Đăng ký"
       title: "Đăng ký"
       content: "Đây sẽ là trang đăng ký cho người dùng mới."
+      name: "Tên"
+      password: "Mật khẩu"
+      confirmation: "Xác nhận mật khẩu"
+      create_account: "Tạo tài khoản"
+  welcome: "Chào mừng đến với ứng dụng mẫu."
+  user_not_found: "Người dùng không tồn tại!"

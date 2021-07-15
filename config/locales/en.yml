@@ -44,6 +44,10 @@ en:
       content: "The %{link_page} by %{link_author}"
       text_page: "Ruby on Rails Tutorial"
       text_author: "Michael Hartl"
+  shared:
+    error_messages:
+      contains: "The form contains"
+      error: "error"
   static_pages:
     about:
       header: "About"
@@ -82,3 +86,9 @@ en:
       header: "Sign up"
       title: "Sign up"
       content: "This will be a signup page for new users."
+      name: "Name"
+      password: "Password"
+      confirmation: "Confirmation"
+      create_account: "Create my account"
+  welcome: "Welcome to the Sample App!"
+  user_not_found: "User not found!"
