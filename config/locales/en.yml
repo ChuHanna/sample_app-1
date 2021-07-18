@@ -37,6 +37,11 @@ en:
       help: "Help"
       login: "Log in"
       sampleapp: "Sample app"
+      users: "Users"
+      account: "Account"
+      profile: "Profile"
+      settings: "Settings"
+      logout: "Logout"
     footer:
       about: "About"
       contact: "Contact"
@@ -90,5 +95,14 @@ en:
       password: "Password"
       confirmation: "Confirmation"
       create_account: "Create my account"
+  sessions:
+    new:
+      header: "Log in"
+      title: "Log in"
+      password: "Password"
+      login: "Log in"
+      new_user: "New user?"
+      signup: "Sign up now!"
   welcome: "Welcome to the Sample App!"
   user_not_found: "User not found!"
+  invalid_login: "Invalid email/password combination"

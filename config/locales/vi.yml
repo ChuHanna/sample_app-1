@@ -6,6 +6,11 @@ vi:
       help: "Trợ giúp"
       login: "Đăng nhập"
       sampleapp: "Ứng dụng mẫu"
+      users: "Người dùng"
+      account: "Tài khoản"
+      profile: "Hồ sơ cá nhân"
+      settings: "Cài đặt"
+      logout: "Đăng xuất"
     footer:
       about: "Về chúng tôi"
       contact: "Liên hệ"
@@ -60,5 +65,14 @@ vi:
       password: "Mật khẩu"
       confirmation: "Xác nhận mật khẩu"
       create_account: "Tạo tài khoản"
+  sessions:
+    new:
+      header: "Đăng nhập"
+      title: "Đăng nhập"
+      password: "Mật khẩu"
+      login: "Đăng nhập"
+      new_user: "Người dùng mới?"
+      signup: "Đăng ký ngay!"
   welcome: "Chào mừng đến với ứng dụng mẫu."
   user_not_found: "Người dùng không tồn tại!"
+  invalid_login: "Tài khoản/Mật khẩu không hợp lệ"
