@@ -30,6 +30,14 @@
 # available at https://guides.rubyonrails.org/i18n.html.
 
 en:
+  activerecord:
+    errors:
+      models:
+        micropost:
+          attributes:
+            image:
+              invalid_format: "must be a valid image format"
+              large_size: "should be less than 5MB"
   base_title: "Ruby on Rails Tutorial Sample App"
   layouts:
     header:
@@ -53,6 +61,13 @@ en:
     error_messages:
       contains: "The form contains"
       error: "error"
+    user_info:
+      view_profile: "View my profile"
+      micropost: "Micropost"
+    micropost_form:
+      new_micropost: "Compose new micropost..."
+      post: "Post"
+      large_size_image: "Maximum size is 5MB. Please choose a smaller file."
   static_pages:
     about:
       header: "About"
@@ -86,6 +101,7 @@ en:
       content: "This is the home page for the %{link} sample application."
       text: "Ruby on Rails Tutorial"
       signup: "Sign up now!"
+      micropost_feed: "Micropost Feed"
   users:
     form:
       name: "Name"
@@ -107,6 +123,8 @@ en:
       title: "Edit user"
       save_changes: "Save changes"
       change_image: "change"
+    show:
+      micropost: "Microposts (%{microposts_count})"
   user_mailer:
     account_activation:
       header: "Sample App"
@@ -153,6 +171,17 @@ en:
       blank: "can't be blank"
       password_reset: "Password has been reset."
       reset_failed: "Reset password failed"
+  microposts:
+    create:
+      micropost_created: "Micropost created!"
+      micropost_created_fail: "Create fail!"
+    destroy:
+      micropost_deleted: "Micropost deleted"
+      deleted_fail: "Deleted fail"
+    micropost:
+      post: "Post %{time} ago."
+      delete: "Delete"
+      sure: "You sure?"
   welcome: "Welcome to the Sample App!"
   user_not_found: "User not found!"
   invalid_login: "Invalid email/password combination"
@@ -166,3 +195,4 @@ en:
     Check your email for the activation link."
   activated_success: "Account activated!"
   activated_invalid: "Invalid activation link"
+  micropost_invalid: "Micropost invalid"

@@ -1,4 +1,12 @@
 vi:
+  activerecord:
+    errors:
+      models:
+        micropost:
+          attributes:
+            image:
+              invalid_format: "phải có định dạng phù hợp"
+              large_size: "nên nhỏ hơn 5MB"
   base_title: "Hướng dẫn Ruby on Rails Sample App"
   layouts:
     header:
@@ -22,6 +30,13 @@ vi:
     error_messages:
       contains: "Biểu mẫu này chứa"
       error: "lỗi"
+    user_info:
+      view_profile: "Xem hồ sơ cá nhân"
+      micropost: "Bài viết"
+    micropost_form:
+      new_micropost: "Tạo bài viết mới..."
+      post: "Đăng"
+      large_size_image: "Kích thước tối đa là 5MB. Vui lòng chọn file nhỏ hơn."
   static_pages:
     about:
       header: "Về nội dung"
@@ -56,6 +71,7 @@ vi:
       content: "Đây là trang chủ cho ứng dụng mẫu của %{link}."
       text: "Hướng dẫn Ruby on Rails"
       signup: "Đăng ký ngay!"
+      micropost_feed: "Bảng tin"
   users:
     form:
       name: "Tên"
@@ -77,6 +93,8 @@ vi:
       title: "Chỉnh sửa người dùng"
       save_changes: "Lưu thay đổi"
       change_image: "thay đổi"
+    show:
+      micropost: "Bài viết (%{microposts_count})"
   user_mailer:
     account_activation:
       header: "Ứng dụng mẫu"
@@ -123,6 +141,17 @@ vi:
       blank: "không được để trống"
       password_reset: "Mật khẩu đã được thiết lập lại."
       reset_failed: "Thiết lập lại mật khẩu thất bại"
+  microposts:
+    create:
+      micropost_created: "Bài viết được tạo!"
+      micropost_created_fail: "Tạo thất bại!"
+    destroy:
+      micropost_deleted: "Đã xóa bài viết"
+      deleted_fail: "Xóa thất bại"
+    micropost:
+      post: "Đăng %{time} trước."
+      delete: "Xóa"
+      sure: "Bạn chắc chứ?"
   welcome: "Chào mừng đến với ứng dụng mẫu."
   user_not_found: "Người dùng không tồn tại!"
   invalid_login: "Tài khoản/Mật khẩu không hợp lệ"
@@ -136,3 +165,4 @@ vi:
     Kiểm tra email của bạn để kích hoạt tài khoản."
   activated_success: "Tài khoản được kích hoạt!"
   activated_invalid: "Đường dẫn kích hoạt không hợp lệ"
+  micropost_invalid: "Bài viết không hợp lệ"
