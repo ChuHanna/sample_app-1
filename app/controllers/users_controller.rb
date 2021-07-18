@@ -1,11 +1,11 @@
 class UsersController < ApplicationController
-  before_action :find_user_by_id, only: %i(show edit update destroy correct_user)
-  before_action :logged_in_user, only: %i(index edit update destroy)
+  before_action :find_user, except: %i(index new create)
+  before_action :logged_in_user, except: %i(new create show)
   before_action :correct_user, only: %i(edit update)
   before_action :admin_user, only: :destroy
 
   def index
-    @users = User.all.page(params[:page]).per(Settings.max_item_per_page)
+    @users = User.activated.page(params[:page]).per Settings.max_item_per_page
   end
 
   def new
@@ -16,8 +16,9 @@ class UsersController < ApplicationController
     @user = User.new user_params
     return render(:new) unless @user.save
 
-    flash[:success] = t "welcome"
-    redirect_to @user
+    @user.send_activation_email
+    flash[:info] = t "activated_info"
+    redirect_to root_url
   end
 
   def show; end
@@ -65,7 +66,7 @@ class UsersController < ApplicationController
     redirect_to root_url unless current_user.admin?
   end
 
-  def find_user_by_id
+  def find_user
     @user = User.find_by id: params[:id]
     return if @user
 

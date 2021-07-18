@@ -107,6 +107,14 @@ en:
       title: "Edit user"
       save_changes: "Save changes"
       change_image: "change"
+  user_mailer:
+    account_activation:
+      header: "Sample App"
+      greeting: "Hi "
+      intro: "Welcome to the Sample App!
+        Click on the link below to activate your account:"
+      link: "Activate"
+      info: "Account activation"
   sessions:
     new:
       header: "Log in"
@@ -124,3 +132,8 @@ en:
   require_login: "Please log in."
   user_deleted: "User deleted"
   delete_fail: "Delete fail!"
+  activated_info: "Please check your email to activate your account."
+  activated_fail: "Account not activated.
+    Check your email for the activation link."
+  activated_success: "Account activated!"
+  activated_invalid: "Invalid activation link"
