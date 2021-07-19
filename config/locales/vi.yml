@@ -57,14 +57,26 @@ vi:
       text: "Hướng dẫn Ruby on Rails"
       signup: "Đăng ký ngay!"
   users:
+    form:
+      name: "Tên"
+      password: "Mật khẩu"
+      confirmation: "Xác nhận mật khẩu"
+    user:
+      delete: "Xóa"
+      sure: "Bạn chắc chắn chứ?"
+    index:
+      header: "Danh sách người dùng"
+      title: "Danh sách người dùng"
     new:
       header: "Đăng ký"
       title: "Đăng ký"
       content: "Đây sẽ là trang đăng ký cho người dùng mới."
-      name: "Tên"
-      password: "Mật khẩu"
-      confirmation: "Xác nhận mật khẩu"
       create_account: "Tạo tài khoản"
+    edit:
+      header: "Cập nhật hồ sơ cá nhân"
+      title: "Chỉnh sửa người dùng"
+      save_changes: "Lưu thay đổi"
+      change_image: "thay đổi"
   sessions:
     new:
       header: "Đăng nhập"
@@ -77,3 +89,8 @@ vi:
   welcome: "Chào mừng đến với ứng dụng mẫu."
   user_not_found: "Người dùng không tồn tại!"
   invalid_login: "Tài khoản/Mật khẩu không hợp lệ"
+  profile_updated: "Hồ sơ được cập nhật"
+  updated_fail: "Cập nhật thất bại"
+  require_login: "Vui lòng đăng nhập."
+  user_deleted: "Đã xóa người dùng"
+  delete_fail: "Xóa thất bại!"

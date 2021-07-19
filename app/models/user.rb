@@ -8,7 +8,7 @@ class User < ApplicationRecord
     length: {maximum: Settings.maximum_email_length},
     format: {with: Settings.valid_email_regex}, uniqueness: true
   validates :password, presence: true,
-    length: {minimum: Settings.minimum_password_length}
+    length: {minimum: Settings.minimum_password_length}, allow_nil: true
 
   has_secure_password
 

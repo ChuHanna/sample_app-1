@@ -1,9 +1,11 @@
 author: "https://www.michaelhartl.com/"
 enabled_locales: ["en", "vi"]
-image_size: 200
+gravatar_web: "https://gravatar.com/emails"
+image_size: 50
 learn_enough_web: "https://www.learnenough.com/"
 maximum_email_length: 255
 maximum_name_length: 50
+max_item_per_page: 20
 minimum_password_length: 6
 rails: "https://rubyonrails.org/"
 rails_book: "https://www.railstutorial.org/book"
@@ -12,4 +14,10 @@ rails_help: "https://www.railstutorial.org/help"
 rails_news: "https://news.railstutorial.org/"
 rails_tutorial: "https://www.railstutorial.org/"
 screencast_web: "https://screencasts.railstutorial.org/"
+seed:
+  name: "Example User"
+  email: "example@railstutorial.org"
+  password: "foobar"
+  password_2: "password"
+  loop: 99
 valid_email_regex: !ruby/regexp /\A[\w+\-.]+@[a-z\d\-]+(\.[a-z\d\-]+)*\.[a-z]+\z/i

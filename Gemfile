@@ -4,10 +4,13 @@ git_source(:github){|repo| "https://github.com/#{repo}.git"}
 ruby "2.7.1"
 
 gem "bcrypt", "3.1.13"
+gem "bootstrap-kaminari-views"
 gem "bootstrap-sass", "3.4.1"
 gem "config"
+gem "faker", "2.1.2"
 gem "i18n-js"
 gem "jbuilder", "~> 2.7"
+gem "kaminari"
 gem "mysql2", "~> 0.5.3"
 gem "puma", "~> 4.1"
 gem "rails", "~> 6.0.4"
