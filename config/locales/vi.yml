@@ -73,6 +73,7 @@ vi:
       login: "Đăng nhập"
       new_user: "Người dùng mới?"
       signup: "Đăng ký ngay!"
+      remember_me: "Lưu tài khoản trên máy này"
   welcome: "Chào mừng đến với ứng dụng mẫu."
   user_not_found: "Người dùng không tồn tại!"
   invalid_login: "Tài khoản/Mật khẩu không hợp lệ"

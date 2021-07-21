@@ -103,6 +103,7 @@ en:
       login: "Log in"
       new_user: "New user?"
       signup: "Sign up now!"
+      remember_me: "Remember me on this computer"
   welcome: "Welcome to the Sample App!"
   user_not_found: "User not found!"
   invalid_login: "Invalid email/password combination"
