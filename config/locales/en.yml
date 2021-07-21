@@ -87,14 +87,26 @@ en:
       text: "Ruby on Rails Tutorial"
       signup: "Sign up now!"
   users:
+    form:
+      name: "Name"
+      password: "Password"
+      confirmation: "Confirmation"
+    user:
+      delete: "Delete"
+      sure: "You sure?"
+    index:
+      header: "All users"
+      title: "All users"
     new:
       header: "Sign up"
       title: "Sign up"
       content: "This will be a signup page for new users."
-      name: "Name"
-      password: "Password"
-      confirmation: "Confirmation"
       create_account: "Create my account"
+    edit:
+      header: "Update your profile"
+      title: "Edit user"
+      save_changes: "Save changes"
+      change_image: "change"
   sessions:
     new:
       header: "Log in"
@@ -107,3 +119,8 @@ en:
   welcome: "Welcome to the Sample App!"
   user_not_found: "User not found!"
   invalid_login: "Invalid email/password combination"
+  profile_updated: "Profile updated"
+  updated_fail: "Updated fail"
+  require_login: "Please log in."
+  user_deleted: "User deleted"
+  delete_fail: "Delete fail!"
