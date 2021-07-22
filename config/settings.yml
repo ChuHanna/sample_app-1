@@ -1,6 +1,7 @@
 author: "https://www.michaelhartl.com/"
 enabled_locales: ["en", "vi"]
 gravatar_web: "https://gravatar.com/emails"
+hours_expired: 2
 image_size: 50
 learn_enough_web: "https://www.learnenough.com/"
 maximum_email_length: 255
