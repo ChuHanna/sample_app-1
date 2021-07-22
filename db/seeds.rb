@@ -11,7 +11,9 @@ User.create! name: Settings.seed.name,
              email: Settings.seed.email,
              password: Settings.seed.password,
              password_confirmation: Settings.seed.password,
-             admin: true
+             admin: true,
+             activated: true,
+             activated_at: Time.zone.now
 
 # Generate a bunch of additional users.
 Settings.seed.loop.times do |n|
@@ -21,5 +23,7 @@ Settings.seed.loop.times do |n|
   User.create! name: name,
                email: email,
                password: password,
-               password_confirmation: password
+               password_confirmation: password,
+               activated: true,
+               activated_at: Time.zone.now
 end
