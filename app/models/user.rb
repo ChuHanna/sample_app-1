@@ -1,8 +1,10 @@
 class User < ApplicationRecord
+  has_many :microposts, dependent: :destroy
+
   attr_accessor :remember_token, :activation_token, :reset_token
   before_save :downcase_email
   before_create :create_activation_digest
-  scope :activated, ->{where activated: true}
+
   validates :name, presence: true,
     length: {maximum: Settings.maximum_name_length}
   validates :email, presence: true,
@@ -10,6 +12,8 @@ class User < ApplicationRecord
     format: {with: Settings.valid_email_regex}, uniqueness: true
   validates :password, presence: true,
     length: {minimum: Settings.minimum_password_length}, allow_nil: true
+
+  scope :activated, ->{where activated: true}
 
   has_secure_password
 
@@ -61,6 +65,10 @@ class User < ApplicationRecord
 
   def password_reset_expired?
     reset_sent_at < Settings.hours_expired.hours.ago
+  end
+
+  def feed
+    microposts
   end
 
   private

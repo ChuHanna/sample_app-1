@@ -3,11 +3,16 @@ enabled_locales: ["en", "vi"]
 gravatar_web: "https://gravatar.com/emails"
 hours_expired: 2
 image_size: 50
+image_limit: 500
+image_type: ["image/jpeg", "image/gif", "image/png"]
+image_types: "image/jpeg,image/gif,image/png"
 learn_enough_web: "https://www.learnenough.com/"
 maximum_email_length: 255
 maximum_name_length: 50
 max_item_per_page: 20
+maximum_content_length: 140
 minimum_password_length: 6
+max_image_size: 5
 rails: "https://rubyonrails.org/"
 rails_book: "https://www.railstutorial.org/book"
 rails_contact: "https://www.railstutorial.org/contact"
@@ -21,4 +26,6 @@ seed:
   password: "foobar"
   password_2: "password"
   loop: 99
+  word_count: 5
+  user_count: 6
 valid_email_regex: !ruby/regexp /\A[\w+\-.]+@[a-z\d\-]+(\.[a-z\d\-]+)*\.[a-z]+\z/i

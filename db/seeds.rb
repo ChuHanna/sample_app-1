@@ -27,3 +27,10 @@ Settings.seed.loop.times do |n|
                activated: true,
                activated_at: Time.zone.now
 end
+
+# Generate microposts for a subset of users.
+users = User.order(:created_at).take Settings.seed.user_count
+Settings.seed.loop.times do
+  content = Faker::Lorem.sentence word_count: Settings.seed.word_count
+  users.each {|user| user.microposts.create! content: content}
+end
