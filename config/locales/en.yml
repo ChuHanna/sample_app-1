@@ -68,6 +68,9 @@ en:
       new_micropost: "Compose new micropost..."
       post: "Post"
       large_size_image: "Maximum size is 5MB. Please choose a smaller file."
+    stats:
+      following: "Following"
+      followers: "Followers"
   static_pages:
     about:
       header: "About"
@@ -110,6 +113,17 @@ en:
     user:
       delete: "Delete"
       sure: "You sure?"
+    follow:
+      follow: "Follow"
+    unfollow:
+      unfollow: "Unfollow"
+    following:
+      following: "Following"
+    followers:
+      followers: "Followers"
+    show_follow:
+      my_profile: "View my profile"
+      microposts: "<b>Microposts:</b> %{count}"
     index:
       header: "All users"
       title: "All users"
@@ -196,3 +210,5 @@ en:
   activated_success: "Account activated!"
   activated_invalid: "Invalid activation link"
   micropost_invalid: "Micropost invalid"
+  follow: "Follow user"
+  unfollow: "Unfollow user"

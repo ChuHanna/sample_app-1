@@ -34,3 +34,11 @@ Settings.seed.loop.times do
   content = Faker::Lorem.sentence word_count: Settings.seed.word_count
   users.each {|user| user.microposts.create! content: content}
 end
+
+# Create following relationships.
+users = User.all
+user = users.first
+following = users[Settings.seed.following_range]
+followers = users[Settings.seed.followers_range]
+following.each{|followed| user.follow followed}
+followers.each{|follower| follower.follow user}

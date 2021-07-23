@@ -37,6 +37,9 @@ vi:
       new_micropost: "Tạo bài viết mới..."
       post: "Đăng"
       large_size_image: "Kích thước tối đa là 5MB. Vui lòng chọn file nhỏ hơn."
+    stats:
+      following: "Theo dõi"
+      followers: "Người theo dõi"
   static_pages:
     about:
       header: "Về nội dung"
@@ -80,6 +83,17 @@ vi:
     user:
       delete: "Xóa"
       sure: "Bạn chắc chắn chứ?"
+    follow:
+      follow: "Theo dõi"
+    unfollow:
+      unfollow: "Bỏ theo dõi"
+    following:
+      following: "Đang theo dõi"
+    followers:
+      followers: "Được theo dõi"
+    show_follow:
+      my_profile: "Xem hồ sơ cá nhân"
+      microposts: "<b>Bài viết:</b> %{count}"
     index:
       header: "Danh sách người dùng"
       title: "Danh sách người dùng"
@@ -166,3 +180,5 @@ vi:
   activated_success: "Tài khoản được kích hoạt!"
   activated_invalid: "Đường dẫn kích hoạt không hợp lệ"
   micropost_invalid: "Bài viết không hợp lệ"
+  follow: "Đã theo dõi người dùng"
+  unfollow: "Đã bỏ theo dõi người dùng"

@@ -13,6 +13,7 @@ max_item_per_page: 20
 maximum_content_length: 140
 minimum_password_length: 6
 max_image_size: 5
+mini_image_size: 30
 rails: "https://rubyonrails.org/"
 rails_book: "https://www.railstutorial.org/book"
 rails_contact: "https://www.railstutorial.org/contact"
@@ -28,4 +29,6 @@ seed:
   loop: 99
   word_count: 5
   user_count: 6
+  following_range: !ruby/range 2..50
+  followers_range: !ruby/range 3..40
 valid_email_regex: !ruby/regexp /\A[\w+\-.]+@[a-z\d\-]+(\.[a-z\d\-]+)*\.[a-z]+\z/i
